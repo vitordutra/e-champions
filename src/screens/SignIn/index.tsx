@@ -1,41 +1,31 @@
 import React from 'react';
-import { 
-  Image, 
-  Text, 
-  View, 
-  StatusBar
-} from 'react-native';
+import { View, Text, Image } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 import IllustrationImg from '../../assets/illustration.png';
 import { styles } from './styles';
 
-export function SignIn() {
-  return(
-    <View style={styles.container}>
-      <StatusBar 
-        barStyle="light-content"
-        backgroundColor="transparent"
-        translucent
-      />
+import { ButtonIcon } from '../../components/ButtonIcon';
 
-      <Image 
-        source={IllustrationImg} 
+export function SignIn() {
+  const navigation = useNavigation();
+
+  function handleSignIn() {
+    navigation.navigate('Home');
+  }
+
+  return (
+    <View style={styles.container}>
+      <Image
+        source={IllustrationImg}
         style={styles.image}
-        resizeMode="stretch"
+        resizeMode='stretch'
       />
 
       <View style={styles.content}>
-        <Text style={styles.title}>
-          Organize {'\n'}
-          seus jogos {'\n'}
-          facilmente
-        </Text>
+        <Text style={styles.title}>Organize seu campeonato de E-Sports</Text>
+        <ButtonIcon title='Entrar com Discord' onPress={handleSignIn} />
       </View>
-
-      <Text style={styles.subtitle}>
-        Crie grupos para jogar seus games {'\n'}
-        favoritos com seus amigos
-      </Text>
     </View>
   );
 }
