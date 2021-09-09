@@ -21,8 +21,10 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
+        "backgroundColor": "#11F4A3"
+      },
+      "package": "com.pds.echampions",
+      "versionCode": 1
     },
     "web": {
       "favicon": "./assets/favicon.png"
