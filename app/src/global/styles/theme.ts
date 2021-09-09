@@ -19,7 +19,8 @@ export const theme = {
     plus: '#DDE3F0',
     line: '#DDE3F0',
     on: '#0027FF',
-    offline: '#FF0000'
+    offline: '#FF0000',
+    discord: '#7289DA',
   },
 
   fonts: {
