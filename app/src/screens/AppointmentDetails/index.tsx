@@ -52,7 +52,7 @@ export function AppointmentDetails() {
     try {
       const response = await api.get(`/guilds/${guildSelected.guild.id}/widget.json`);
       setWidget(response.data);
-    } catch {
+    } catch (error) {
       Alert.alert('Verifique as configurações do servidor. Será que o Widget está habilitado?');
     } finally {
       setLoading(false);
@@ -67,7 +67,7 @@ export function AppointmentDetails() {
     Share.share({
       message,
       url: widget.instant_invite
-    })
+    });
   }
 
   function handleOpenGuild() {
