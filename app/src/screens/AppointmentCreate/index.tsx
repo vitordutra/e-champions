@@ -13,7 +13,6 @@ import {
 import { theme } from '../../global/styles/theme';
 
 import { CategorySelect } from '../../components/CategorySelect';
-import { Background } from '../../components/Background';
 import { Header } from '../../components/Header';
 import { GuildIcon } from '../../components/GuildIcon';
 import { SmallInput } from '../../components/SmallInput';
@@ -52,7 +51,6 @@ export function AppointmentCreate() {
       behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
       style={styles.container}
     >
-      <Background>
         <ScrollView>
           <Header
             title="Agendar Partida"
@@ -147,7 +145,6 @@ export function AppointmentCreate() {
             </View>
           </View>
         </ScrollView>
-      </Background>
 
       <ModalView visible={openGuildsModal} closeModal={handleCloseGuilds}>
         <Guilds handleGuildSelect={handleGuildSelect} />
