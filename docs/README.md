@@ -2,9 +2,9 @@
 A mobile app that uses the Discord API to schedule games between friends
 
 ## Content
-app: React Native app
-docs: App Documentation, using UML
-ui: User Interface, made using Figma
+- app: React Native app
+- docs: App Documentation, using UML
+- ui: User Interface, made using Figma
 
 ## Stack
 
