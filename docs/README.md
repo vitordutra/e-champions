@@ -1,13 +1,19 @@
 # E-champions
+A mobile app that uses the Discord API to schedule games between friends
 
-## 🧪 Stack
+## Content
+app: React Native app
+docs: App Documentation, using UML
+ui: User Interface, made using Figma
+
+## Stack
 
 This project was developed using the following technologies:
 
 - [React Native](https://reactnative.dev/)
 - [Expo](https://expo.io/)
 
-## 🚀 Getting started
+## Getting started
 
 Clone the project and access the folder.
 
@@ -35,3 +41,6 @@ $ yarn
 # Start the project
 $ expo start
 ```
+
+## Authors
+Amanda Jorge, Carlos Filipe Santos, João Vitor Dutra P. Gois, Victor Valvan
